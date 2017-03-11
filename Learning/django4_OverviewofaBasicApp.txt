@@ -1,0 +1,21 @@
+
+
+Overview of a Basic App:
+    基本应用程序概述
+
+    migrations:
+           数据升级使用
+    __init__.py:
+            初始化
+    admin.py:
+            管理员
+    apps.py:
+            apps的配置
+    models.py:
+           数据库蓝图：
+    tests.py:
+            测试类
+    views.py:
+            响应用户的请求
+    db.sqlite3:
+            数据库

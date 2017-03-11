@@ -1,0 +1,7 @@
+
+Creating Our First App:
+
+一个网站由多个不同的APP组成
+创建一个APP:
+commandline:
+    python manage.py startapp ***

@@ -1,0 +1,17 @@
+
+创建一个djngo项目:
+    django-admin startproject website
+
+_init_.py:
+    放一些初始化的东西
+setting.py:
+    WebProject的一些配置信息
+urls.py:
+    url的配置
+wsgi.py:
+    网关接口
+manage.py:
+    webProject的管理文件
+    进入当前目录下的cmd，可以启动Server,关闭server
+    启动:python manage.py runserver
+    停止:ctrl+c

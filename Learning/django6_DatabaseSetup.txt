@@ -1,0 +1,8 @@
+
+Database Setup:
+
+每个APP都对应了数据库,django自带sqlite3数据库，
+
+数据库迁移:
+commandline:
+       python manage.py migrate

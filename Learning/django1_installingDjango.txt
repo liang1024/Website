@@ -1,0 +1,10 @@
+
+
+# django
+# github地址: https://github.com/django/django
+# 官网地址:https://www.djangoproject.com/
+# 安装教程:https://docs.djangoproject.com/en/1.10/intro/install/
+
+# 第三方教程地址:https://www.youtube.com/watch?v=qgGIqRFvFFk&list=PL6gx4Cwl9DGBlmzzFcLgDhKTTfNLfX1IK
+
+# 查看Django版本号:django-admin --version
