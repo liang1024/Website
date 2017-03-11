@@ -1,0 +1,21 @@
+
+
+Admin Interface:
+        管理界面
+
+  打开Termial，输入以下命令
+        python manage.py createsuperuser
+  依次输入
+        Username
+        Eamil address
+        password
+        password(again)
+   (注意:密码必须是8位或以上，不能为纯数字)
+
+   创建成功之后登陆：
+
+   http://127.0.0.1:8000/admin/
+   即可管理数据库
+
+
+

@@ -1,0 +1,16 @@
+
+Activating Models:
+        激活模型
+
+     #1.在项目的Setting.py中的安装APP中配置当前安装APP的apps.py中的MusicConfig
+        如:    'music.apps.MusicConfig',
+
+
+     #1.在定义好models.py中的Class与Attributes后，在Treminal中执行以下语句(准备迁移数库)
+         python manage.py makemigrations music
+
+     #可以使用以下命令查看语句
+                python manage.py sqlmigrate music 0001
+
+     #2.迁移数据库(将在sqlite3数据库中生成表与字段)
+         python manage.py migrate

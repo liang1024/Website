@@ -1,0 +1,5 @@
+
+
+CreatingModels：
+    在APP下的models.py下新建model属性(将被映射到数据库中)
+    class+Attributes

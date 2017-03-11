@@ -30,7 +30,9 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+#配置已创建的APP
 INSTALLED_APPS = [
+    'music.apps.MusicConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
