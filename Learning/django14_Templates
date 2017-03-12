@@ -1,0 +1,19 @@
+
+Templates:
+   模板，用于展示web界面：
+    from django.template import loader
+
+    1.在app目录下新建templates文件夹，然后再创建以app为名字的文件夹,再创建html文件
+    2.在views.py中使用templates:
+def index(request):
+    all_albums=Album.objects.all()
+    template=loader.get_template('music/index.html')
+    context={
+        'all_albums':all_albums
+    }
+    return HttpResponse(template.render(context,request))
+
+    3.在html代码中拿到传递过去的数据: 以{%%}作为标识符
+        {% for album in all_albums %}
+                 <li><a href="/music/{{album.id}}/">{{album.album_title}}</a> </li>
+        {% endfor %}

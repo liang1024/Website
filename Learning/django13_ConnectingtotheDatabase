@@ -1,0 +1,25 @@
+
+
+Connecting to the Database:
+    连接到数据库：
+     在views.py中导入models中的数据库类，并使用
+
+     from .models import Album
+
+     视频连接:
+     https://www.youtube.com/watch?v=b0d09mYsORs
+
+
+from .models import Album
+
+from django.http import  HttpResponse
+from .models import Album
+
+def index(request):
+    all_ablums=Album.objects.all()
+    html=''
+    for all_ablum in all_ablums:
+        url='/music/'+str(all_ablum.id)+'/'
+        html+='<a href="'+url+'">'+all_ablum.album_title+'</a><br>'
+    return HttpResponse(html)
+    # return HttpResponse("<h1>This is the Music app HomePage</h1>")

@@ -1,0 +1,15 @@
+{# 如果有专辑#}
+{% if all_albums %}
+    <h2>Here are all my Albums!</h2>
+    <ul>
+        {#拿到views.py传递过来的models对象#}
+        {% for album in all_albums %}
+         <li><a href="/music/{{album.id}}/">{{album.album_title}}</a> </li>
+         {#for结束标签#}
+         {% endfor %}
+    </ul>
+{# 没有专辑#}
+{% else %}
+    <h3>You don't have any albums!</h3>
+{# if结束标签#}
+{% endif %}
