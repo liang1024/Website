@@ -1,0 +1,13 @@
+
+Related Objects Set:
+
+快速添加一堆对象
+>>> album1=Album.objects.get(pk=1)
+>>> album1.song_set.create(song_title='I love bacon',file_type='mp3')
+<Song: I love bacon>
+>>> album1.song_set.create(song_title='Bucky is lucky',file_type='mp3')
+<Song: Bucky is lucky>
+>>> album1.song_set.create(song_title='liangzai is lucky',file_type='mp3')
+<Song: liangzai is lucky>
+>>> album1.song_set.create(song_title='Ice Cream',file_type='mp3')
+<Song: Ice Cream>
