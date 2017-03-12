@@ -1,0 +1,30 @@
+
+Creating a Base Template:
+    Video address:
+        https://www.youtube.com/watch?v=-nvoGfTD4QU&index=28&list=PL6gx4Cwl9DGBlmzzFcLgDhKTTfNLfX1IK
+
+       html布局都拥有相同的导航条+相同的Title,为了减少代码冗余，建立一个Base.html用于存放头布局
+
+
+1.       base.html中使用：
+
+       包裹其他代码
+       {% block body %}
+        {% endblock %}
+
+
+2.       子html中需要标明
+        {% extends 'music/base.html' %}
+
+        并使用标签包裹子html中的内容
+
+        {% block body %}
+        ***子html***
+        {% endblock %}
+
+3.      base.html标识title可以让子html覆盖title使用:
+        <title>{% block title %}Title{% endblock %}</title>
+
+4.      子html中覆盖:
+        {% block title %}Songs{% endblock %}
+
