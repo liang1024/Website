@@ -1,0 +1,19 @@
+
+Designing the Details Template:
+    设计详细信息模板
+
+   在html界面中显示数据库内容:
+
+ 显示logo
+<img src="{{album.album_logo}}">
+显示title
+<h1>{{ album.album_title }}</h1>
+显示作者
+<h3>{{ album.artist }}</h3>
+
+显示歌的名字与类型
+<ul>
+    {% for song in album.song_set.all %}
+    <li>{{ song.song_title }}-{{ song.file_type }}</li>
+    {% endfor %}
+</ul>

@@ -13,7 +13,7 @@ class Album(models.Model):
 
     #
     def __str__(self):
-        return self.albun_title + ":" + self.genre
+        return self.album_title + ":" + self.genre
 
 
 class Song(models.Model):
