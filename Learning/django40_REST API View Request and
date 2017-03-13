@@ -1,0 +1,15 @@
+
+REST API View Request and :
+    Video address:
+    https://www.youtube.com/watch?v=QW_5xCCPWFk&index=40&list=PL6gx4Cwl9DGBlmzzFcLgDhKTTfNLfX1IK
+
+
+实现  Serializer 转JSON并返回
+
+1.导入rest_framework包
+官网:http://www.django-rest-framework.org/
+2.新建Serializer类
+提从数据库中查询需要转换为json串的属性
+3.在View.py中定义Get 和Post方法，
+在方法中将查询出来的数据进行Serializer并返回给Response
+4.在项目的Urls.py中配置访问路径

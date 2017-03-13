@@ -1,0 +1,17 @@
+
+REST API Introduction
+Video Address:
+https://www.youtube.com/watch?v=Yw7gETuRKjw&list=PL6gx4Cwl9DGBlmzzFcLgDhKTTfNLfX1IK&index=33#t=28.245062
+
+
+介绍JSON 返回的API的种类
+
+
+1.创建一个APP：
+
+ python manage.py startapp ****
+
+2. REST API Introduction:
+
+
+
